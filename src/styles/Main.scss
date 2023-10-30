@@ -1,0 +1,29 @@
+.Main {
+  padding: 25px 50px 23px 50px;
+  &_head {
+    &_title {
+      color: #000;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      font-size: calc(20px + 2vmin);
+      margin: 0 0 34px 0;
+    }
+    &_description {
+      color: #000;
+      font-family: "Inter", sans-serif;
+      font-size: calc(11px + 1vmin);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 583px;
+      margin: 0 0 34px 0;
+    }
+  }
+  &_quiz {
+    background-color: #ddf3ff;
+    border-radius: 10px;
+    padding: 35px;
+  }
+}

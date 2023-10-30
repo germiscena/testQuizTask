@@ -1,0 +1,106 @@
+.Result {
+  padding: 50px;
+  &_head {
+    &_title {
+      color: #000;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      font-size: calc(24px + 2vmin);
+      margin: 0 0 34px 0;
+    }
+    &_description {
+      color: #000;
+      font-family: "Inter", sans-serif;
+      font-size: calc(12px + 1vmin);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 583px;
+      margin: 0 0 66px 0;
+    }
+  }
+  &_body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_singleItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 240px;
+      margin: 0px 5vmin 5vmin 0px;
+
+      &_name {
+        color: #000;
+        font-family: "Inter", sans-serif;
+        font-size: calc(12px + 1vmin);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        padding-top: 2px;
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      &_image {
+        width: 240px;
+        height: 240px;
+        border-radius: 6.75px;
+        border: 1px solid #e9e9e9;
+        margin-bottom: 22px;
+      }
+      &_prices {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        align-items: center;
+
+        &_old {
+          color: #b8b8b8;
+          font-family: "Inter", sans-serif;
+          font-size: calc(12px + 1vmin);
+          font-style: normal;
+          font-weight: 600;
+          margin: 0;
+        }
+        &_new {
+          color: #000;
+          font-family: "Inter", sans-serif;
+          font-size: calc(12px + 2vmin);
+          font-style: normal;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      &_like {
+        margin-top: 15px;
+        margin-left: 195px;
+      }
+    }
+  }
+  &_pagination {
+    display: flex;
+    flex-direction: row;
+
+    &_page {
+      font-family: "Inter", sans-serif;
+      font-size: calc(12px + 1vmin);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #b8b8b8;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    .current {
+      color: #00a5ff;
+    }
+  }
+}
